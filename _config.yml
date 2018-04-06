@@ -1,0 +1,67 @@
+title: luob Blog
+SEOTitle: luob 的个人博客 | Luob Blog
+header-img: img/home-bg.jpg
+email: crofy@yandex.com
+description: "luob 的个人学习笔记"
+keyword: "luob Blog, lifetrut Blog, 天行健，君子以自强不息, 罗彬的个人博客, 博客, JavaScript, java"
+url: "http://lifetrut.com/"
+baseurl: ""
+
+
+
+RSS: false
+github_username: lifetrut
+zhihu_username: luo-bin-6-79
+jianshu_username: 1bbb3d1dfcff
+
+
+highlighter: rouge
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json"]
+anchorjs: true
+
+gems: [jekyll-paginate]
+
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+disqus_username: lifetrut
+
+netease_comment: false
+
+
+sidebar: true
+sidebar-about-description: "咏长夜攀北斗， 蝶恋花梦难留。<br>书翻千秋史， 谈尽古今愁。"
+sidebar-avatar: /img/avatar-luob.jpg 
+
+
+featured-tags: true
+featured-condition-size: 1   
+
+
+
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+
+friends: [
+    {
+        title: "R大",
+        href: "http://rednaxelafx.iteye.com/"
+    },{
+        title: "老马",
+        href: "http://www.cnblogs.com/swiftma"
+    },{
+        title: "狼哥",
+        href: "https://www.jianshu.com/u/90ab66c248e6"
+    },{
+        title: "前端日刊",
+        href: "https://funteas.com/"
+    },{
+        title: "Spring for All",
+        href: "http://www.spring4all.com/"
+    }
+]
