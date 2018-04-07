@@ -2,7 +2,7 @@
 layout:     post
 title:      "Hello 2018"
 subtitle:   " \"Hello World, Hello Blog\""
-date:       2018-04-5 15:30:00
+date:       2018-04-6 15:30:00
 author:     "Luob"
 header-img: "img/post/post-2018-hello.jpg"
 catalog: true
@@ -10,14 +10,14 @@ tags:
     - 生活
 ---
 
-> “Yeah It's on. ”
+> “Later equals never 。 —— [ LeBlanc ] ”
 
 ## 前言
 
 Blog 终于开通了
 
 
-之前看书的时候一直总线想写的东西，但是因为各种原因（其实就是懒）。结果就一直没成！
+之前看书的时候一直总想写的东西，但是因为各种原因（其实就是懒）。结果就一直没成！
 
 过了一段时间之后突然心血来潮了，于是就干脆做了吧。。。。。
 
