@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "并发基础知识（一）"
-subtitle:   " \"线程的基本概念\""
+title:      "并发基础知识"
+subtitle:   " \"线程的基本概念（一）\""
 date:       2018-04-6 23:30:00
 author:     "Luob"
 header-img: "img/post/post-2018-hello-thread-1.jpg"
