@@ -30,7 +30,7 @@ tags:
 
 |        |         |        |        |        |         |
 | ------ | ------  | ------ | ------ | ------ | ------ |
-|        |Load-Load|Store-Store|Store-Load|数据依赖|
+|        |Load-Load|Load-Store|Store-Store|Store-Load|数据依赖|
 |sparc-TSO|N|N|N|Y|N|
 |x86|N|N|N|Y|N|
 |ia64|Y|Y|Y|Y|N|
@@ -42,10 +42,10 @@ tags:
 
 |屏障类型|指令示例|说明|
 | ------ | ------ | ------ |
-| LoadLoad Barriers|Load1; LoadLoad; Load2|确保Load1数据的装载，之前于Load2及所有后续装载指令的装载。|
-|StoreStore Barriers|Store1; StoreStore; Store2|确保Store1数据对其他处理器可见（刷新到内存），之前于Store2及所有后续存储指令的存储。|
-|LoadStore Barriers|Load1; LoadStore; Store2|确保Load1数据装载，之前于Store2及所有后续的存储指令刷新到内存。|
-StoreLoad Barriers|Store1; StoreLoad; Load2|确保Store1数据对其他处理器变得可见（指刷新到内存），之前于Load2及所有后续装载指令的装载。StoreLoad Barriers会使该屏障之前的所有内存访问指令（存储和装载指令）完成之后，才执行该屏障之后的内存访问指令。|
+| LoadLoad Barriers|Load1;<br> LoadLoad;<br> Load2|确保Load1数据的装载，之前于Load2及所有后续装载指令的装载。|
+|StoreStore Barriers|Store1;<br> StoreStore;<br> Store2|确保Store1数据对其他处理器可见（刷新到内存），<br>之前于Store2及所有后续存储指令的存储。|
+|LoadStore Barriers|Load1;<br> LoadStore;<br> Store2|确保Load1数据装载，之前于Store2及所有后续的存储指令刷新到内存。|
+StoreLoad Barriers|Store1;<br> StoreLoad;<br> Load2|确保Store1数据对其他处理器变得可见（指刷新到内存），<br>之前于Load2及所有后续装载指令的装载。<br>StoreLoad Barriers会使该屏障之前的所有内存访问指令（存储和装载指令）完成之后，<br>才执行该屏障之后的内存访问指令。|
 |
 
 
