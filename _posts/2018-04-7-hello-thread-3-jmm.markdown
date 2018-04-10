@@ -28,9 +28,8 @@ tags:
 
 以下是常见处理器允许的重排序类型的列表：
 
-|        |         |        |        |        |         |
+|        | Load-Load | Load-Store | Store-Store | Store-Load | 数据依赖 |
 | ------ | ------  | ------ | ------ | ------ | ------ |
-|        |Load-Load|Load-Store|Store-Store|Store-Load|数据依赖|
 |sparc-TSO|N|N|N|Y|N|
 |x86|N|N|N|Y|N|
 |ia64|Y|Y|Y|Y|N|
@@ -42,11 +41,10 @@ tags:
 
 |屏障类型|指令示例|说明|
 | ------ | ------ | ------ |
-| LoadLoad Barriers|Load1;<br> LoadLoad;<br> Load2|确保Load1数据的装载，之前于Load2及所有后续装载指令的装载。|
-|StoreStore Barriers|Store1;<br> StoreStore;<br> Store2|确保Store1数据对其他处理器可见（刷新到内存），<br>之前于Store2及所有后续存储指令的存储。|
-|LoadStore Barriers|Load1;<br> LoadStore;<br> Store2|确保Load1数据装载，之前于Store2及所有后续的存储指令刷新到内存。|
-StoreLoad Barriers|Store1;<br> StoreLoad;<br> Load2|确保Store1数据对其他处理器变得可见（指刷新到内存），<br>之前于Load2及所有后续装载指令的装载。<br>StoreLoad Barriers会使该屏障之前的所有内存访问指令（存储和装载指令）完成之后，<br>才执行该屏障之后的内存访问指令。|
-|
+| LoadLoad<br>Barriers|Load1;<br> LoadLoad;<br> Load2|确保Load1数据的装载，之前于Load2及所有后续装载指令的装载。|
+|StoreStore<br>Barriers|Store1;<br> StoreStore;<br> Store2|确保Store1数据对其他处理器可见（刷新到内存），<br>之前于Store2及所有后续存储指令的存储。|
+|LoadStore<br>Barriers|Load1;<br> LoadStore;<br> Store2|确保Load1数据装载，之前于Store2及所有后续的存储指令刷新到内存。|
+StoreLoad<br>Barriers|Store1;<br> StoreLoad;<br> Load2|确保Store1数据对其他处理器变得可见（指刷新到内存），<br>之前于Load2及所有后续装载指令的装载。<br>StoreLoad Barriers会使该屏障之前的所有内存访问指令（存储和装载指令）完成之后，<br>才执行该屏障之后的内存访问指令。|
 
 
 其中，StoreLoad Barriers是一个“全能型”的屏障，它同时具有其他三个屏障的效果。现代的多处理器大都支持该屏障（其他类型的屏障不一定被所有处理器支持）。执行该屏障开销会很昂贵，因为当前处理器通常要把写缓冲区中的数据全部刷新到内存中。<br><br>
