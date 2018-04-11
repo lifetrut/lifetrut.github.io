@@ -1,8 +1,8 @@
 ---
 layout:     post
-title:      "并发基础知识（三）"
+title:      "并发基础知识（四）"
 subtitle:   " \"浅谈线程安全性（一）\""
-date:       2018-04-9 23:30:00
+date:       2018-04-10 23:30:00
 author:     "Luob"
 header-img: "img/post/post-2018-hello-thread-4.jpg"
 catalog: true
