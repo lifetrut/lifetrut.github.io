@@ -5,7 +5,7 @@ subtitle:   " \"线程的基本概念\""
 date:       2018-04-7 23:30:00
 author:     "Luob"
 header-img: "img/post/post-2018-hello-thread-1.jpg"
-catalog: true
+catalog: false
 tags:
     - 并发
     - java

@@ -8,7 +8,7 @@ const PRECACHE_LIST = [
   "./js/bootstrap.min.js",
   "./js/luob-blog.min.js",
   "./js/snackbar.js",
-  "./img/icon_wechat.png",
+  "./img/icon_wechat.jpg",
   "./img/avatar-luob.jpg",
   "./img/home-bg.jpg",
   "./img/404-bg.jpg",

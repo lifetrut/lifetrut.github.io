@@ -5,7 +5,7 @@ subtitle:   " \"java内存模型的基础认知（二）\""
 date:       2018-04-9 23:30:00
 author:     "Luob"
 header-img: "img/post/post-2018-hello-thread-3.jpg"
-catalog: true
+catalog: false
 tags:
     - 并发
     - java
