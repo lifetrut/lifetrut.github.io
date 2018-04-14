@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "docker 搭建简单的流媒体服务器 "
-subtitle:   " \“教你基于 docker 搭建一个简单的Nginx-rtmp流媒体服务器"
+subtitle:   " \"教你基于 docker 搭建一个简单的Nginx-rtmp流媒体服务器\""
 date:       2018-04-11 23:30:00
 author:     "Luob"
 header-img: "img/post/post-2018-hello-docker-media.jpg"
