@@ -185,11 +185,11 @@ deb http://mirrors.aliyun.com/ubuntu/ xenial-security multiverse
 <br>
 
 **构建 docker 镜像**
->docker build -t nginx:hls .
+> docker build -t nginx:hls .
 <br>
 
 **运行镜像**
->docker run -p9037:80 -p 1935:1935 -v /var/log/nginx:/usr/local/nginx/logs -v 用户流媒体文件目录:/usr/local/nginx/html/play -v 用户流媒体保存目录:/usr/local/nginx/html/video -v 用户音乐文件目录:/usr/local/nginx/html/music -d 镜像id
+> docker run -p9037:80 -p 1935:1935 -v /var/log/nginx:/usr/local/nginx/logs -v 用户流媒体文件目录:/usr/local/nginx/html/play -v 用户流媒体保存目录:/usr/local/nginx/html/video -v 用户音乐文件目录:/usr/local/nginx/html/music -d 镜像id
 
 参数解释：<br>
 -p：指定容器暴露的端口 用户主机IP:容器IP
@@ -198,15 +198,15 @@ deb http://mirrors.aliyun.com/ubuntu/ xenial-security multiverse
 <br>
 
 **点播**
->ffplay rtmp://localhost:1935/play/a.mp4
+> ffplay rtmp://localhost:1935/play/a.mp4
 <br>
 
 **拉流播放：(直播)**
->ffplay rtmp://localhost:1935/play/a
+> ffplay rtmp://localhost:1935/play/a
 <br>
 
 **用 ffmpeg 模拟实现推流：**
->ffmpeg -re -i a.mp4 -acodec aac -f flv rtmp://localhost:1935/play/a
+> ffmpeg -re -i a.mp4 -acodec aac -f flv rtmp://localhost:1935/play/a
 
 ## 后记
 这只是一个简单的例子，并不会有实质性的教学效果。
